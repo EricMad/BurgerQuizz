@@ -1,0 +1,23 @@
+{
+  "name": "2022-09-js-paris-p1-burgerteam",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/2022-09-JS-Paris-P1-BurgerTeam.git"
+  },
+  "author": "Mago/Eric/Huy/Quentin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/2022-09-JS-Paris-P1-BurgerTeam/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/2022-09-JS-Paris-P1-BurgerTeam#readme",
+  "devDependencies": {
+    "w3c-html-validator": "^1.1.3"
+  }
+}

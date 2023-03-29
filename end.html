@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <title>End pages</title>
+  </head>
+  <body>
+
+    <audio id="player" autoplay loop>
+      <source src="./audio/play.mp3">
+    </audio>
+
+    <header>
+      <img class="header__logo" src="img/logo_wild.png" alt="logo">
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="card_header">
+          <h1 class="final">Final Score:</h1>
+          <h1 id="result">0</h1>
+        </div>
+        <div class="card_main">
+          <form class="end-form">
+            <h1 id="end-text">Enter your name below to save your score!</h1>
+            <input
+              type="text"
+              name="name"
+              id="userName"
+              placeholder="Enter your name">
+            
+          </form>
+        </div>
+        <div class="card_footer">
+          <div class="show-board">
+            <button
+            class="end-btn"
+            id="saveScoreBtn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+            <a class="end-btn" href="/index.html">Home</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Burger Team</p>
+      <p>Quentin, Mago, Huy, Eric</p>
+    </footer>
+
+    <script src="end.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+    <title>Burger Team</title>
+  </head>
+  <body>
+    <header>
+      <img class="header__logo" src="img/logo_wild.png" alt="logo">
+    </header>
+
+    <audio id="player" autoplay loop>
+      <source src="./audio/play.mp3">
+    </audio>
+    
+    <audio id="wrong" style="display: none">
+      <source src="./audio/wrong.mp3">
+    </audio>
+      
+    <audio id="correct" style="display: none">
+      <source src="./audio/correct.mp3">
+    </audio>
+      
+
+    <main>
+      <div class="card">
+        <div class="card_header">
+          <h1 id="question">How to say hello in France?</h1>
+        </div>
+        <div class="card_main">
+          <button class="btn" data-number="1">Bonjour</button>
+          <button class="btn" data-number="2">Salut</button>
+          <button class="btn" data-number="3">Bonjourno</button>
+          <button class="btn" data-number="4">Whesh</button>
+        </div>
+        <div class="card_footer">
+          <div class="show-board-index">
+            <div>
+              <p id="progressText" class="show-question">Question</p>
+              <div id="progressBar">
+                <div id="progressBarFull"></div>
+              </div>
+            </div>
+
+            <div class="score">
+              <p class="show-question">Score</p>
+              <h1 id="scoreText" class="board-text">0</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Burger Team</p>
+      <p>Quentin, Mago, Huy, Eric</p>
+    </footer>
+
+    <script type="module" src="gameplay.js"></script>
+  </body>
+</html>
